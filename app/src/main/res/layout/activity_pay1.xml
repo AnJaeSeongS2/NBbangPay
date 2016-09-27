@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_pay1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar_room"></include>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="최근목록"
+        android:textColor="@color/textColor"
+        android:textSize="20sp"
+        android:layout_margin="12dp"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview_recent"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:paddingLeft="8sp"
+        android:paddingRight="8sp">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="6sp"
+        android:background="@color/colorPrimary"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerview_order"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingLeft="8sp"
+        android:paddingRight="8sp">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
